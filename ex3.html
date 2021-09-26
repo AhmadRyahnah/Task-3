@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex3</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-auto-rows: minmax(100px, auto);
+            grid-gap: 5px;
+        }
+
+        .black {
+            background-color: black;
+            grid-column: 1/4;
+            grid-row: 1;
+        }
+        .orange {
+            background-color: orange;
+
+            grid-column: 1/3;
+            grid-row: 2/4;
+        }
+
+        .green {
+            background-color: green;
+            grid-column: 3/4;
+            grid-row: 2/4;
+        }
+
+        .blue {
+            background-color: blue;
+            grid-column: 1/4;
+            grid-row: 4;
+            height: 150px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="black"></div>
+        <div class="orange"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+
+</body>
+
+</html>
